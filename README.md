@@ -6,13 +6,34 @@ Diese Webseite präsentiert Kunstwerke verschiedener Epochen und Künstler. Besu
 
 ## 📌 Features
 
-- 🎨 Darstellung berühmter Kunstwerke mit Bildern und Beschreibungen  
-- 📚 Informationen zu verschiedenen Kunstepochen und ihren Merkmalen  
-- 👨‍🎨 Vorstellung berühmter Künstler und ihrer Werke  
+- 🎨 Präsentation berühmter Kunstwerke mit Bildern und Beschreibungen.
+- 📚 Infos zu Kunstepochen und ihren Merkmalen.
+- 👨‍🎨 Vorstellung bekannter Künstler und ihrer Werke.
+- 🖼️ Einblicke in die bekanntesten Museen weltweit.
+- 🏛️ Vorstellung der eigenen Galerie und ihrer Werke.
+- 📬 Kontaktformular zur Kommunikation mit dem Betreiber.
+- 📜 Impressum und rechtliche Informationen zu Datenschutz und Cookies.
 
 
 ## 🚀 Installation & Nutzung
 
-1. Klone das Repository:  
-   git clone https://github.com/IU-Webprogrammierung/web-programmierung-Rostyslav-Bagrii.git
+1. Klone das Repository:
+   - öffne den Terminal
+   - gebe git clone https://github.com/IU-Webprogrammierung/web-programmierung-Rostyslav-Bagrii.git ein
+
+2. Wechsle in das Projektverzeichnis:
    cd web-programmierung-Rostyslav-Bagrii
+
+3. Datei öffnen:
+   - installiere die Live Server-Erweiterung in Visual Studio Code
+   - öffne dein Projektverzeichnis in VS Code
+   - klicke mit der rechten Maustaste auf die Datei index.html und wähle
+     "Open with Live Server"
+   - der Browser wird automatisch geöffnet und die Seite wird unter einer lokalen URL (z. B. http://127.0.0.1:5500) angezeigt. Dadurch werden alle Ordner und Dateien korrekt geladen
+
+
+## 🛠️ Technologien
+
+- HTML
+- CSS
+- JavaScript
