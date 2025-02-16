@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startseite</title>
+        <!-- Sicherstellen, dass die Seite keine Zoom-Einschränkungen hat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 </head>
 
 <body>
 
-    <header id="navbar">
-        <div id="menu-button">
-            <img id="menu-icon" src="/img/menu.png">
+    <header id="navbar" role="banner">
+        <!-- ARIA-Label für bessere Kontextbeschreibung -->
+        <div id="menu-button" aria-label="Hauptmenü öffnen">
+            <img id="menu-icon" src="/img/menu.png" alt="Menu">
         </div>
         <div id="brand">
-            <img id="brand-logo" src="/img/logo.jpg">
+            <img id="brand-logo" src="/img/logo.jpg" alt="Logo">
             <a id="home-link" href="">Home</a>
         </div>
         <div id="contact-section">
@@ -23,10 +26,11 @@
 
     <div id="sidebar">
         <ul>
-            <li><a class="sidebar-link">Künstler</a></li>
-            <li><a class="sidebar-link">Museen</a></li>
-            <li><a class="sidebar-link">Epochen</a></li>
-            <li><a class="sidebar-link">Eigene Ausstellung</a></li>
+            <!-- Titel für Links -->
+            <li><a class="sidebar-link" href="#" title="Künstler entdecken">Künstler</a></li>
+            <li><a class="sidebar-link" href="#" title="Museen erkunden">Museen</a></li>
+            <li><a class="sidebar-link" href="#" title="Kunstepochen erfahren">Epochen</a></li>
+            <li><a class="sidebar-link" href="#" title="Eigene Ausstellung">Eigene Ausstellung</a></li>
         </ul>
     </div>
 
@@ -46,7 +50,7 @@
         <h1 id="gallery-title">Galerie</h1>
         <div id="gallery-grid">
             <div class="grid-item">
-                <img src="img1.jpg" alt="Bild 1">
+                <img src="img1.jpg" alt="Bild 1"> <!-- Alternativtexte für alle Bilder -->
                 <p class="more-text" data-id="1">Mehr</p>
                 <div class="item-info" data-id="1">
                     <div class="item-img"></div>
@@ -184,7 +188,7 @@
             <p class="footer-item">Impressum</p>
         </div>
         <div id="footer-logo">
-            <img id="footer-logo-img" src="">
+            <img id="footer-logo-img" src="" alt="Logo">
         </div>
         <div id="footer-slogan">
             <p id="slogan-text">"Kunst erleben. Künstler entdecken."</p>
@@ -194,6 +198,7 @@
     <div id="contact">
         <p id="submit-access">Frage erfolgreich gesendet</p>
         <form action="/submit" method="POST">
+            <!-- Beschriftungen klar mit Labels verknüpfen -->
             <label for="question">Ihre Frage</label>
             <textarea id="question" name="question" rows="4" placeholder="Geben Sie Ihre Frage ein..." required></textarea>
         
@@ -202,8 +207,8 @@
         
             <label for="email">Ihre E-Mail-Adresse</label>
             <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
-        
-            <button type="submit">Absenden</button>
+             <!-- Rolle für Button -->
+            <button type="submit" role="button">Absenden</button>
     </div>
     
 </body>
