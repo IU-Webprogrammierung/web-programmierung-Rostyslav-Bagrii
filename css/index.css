@@ -8,6 +8,8 @@ body {
     overflow-x: hidden;
     margin: 0 auto;
     user-select: none;
+    font-family: 'Prata', serif;
+
 }
 
 * {
@@ -41,12 +43,36 @@ body {
     fill: #FAF3E0;
 }
 
+.further-page {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5%;
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+    font-style: italic;
+}
+
+.sidebar-link:hover {
+    color: #FAF3E0;
+}
+
+
 #brand {
     height: 80%;
 }
 
 #brand-logo {
     height: 100%;
+}
+
+#contact-section {
+    display: none;
 }
 
 #contact-text {
@@ -80,7 +106,6 @@ li {
 }
 
 li:hover {
-    background-color: deepskyblue;
     cursor: pointer;
 }
 
@@ -118,12 +143,10 @@ li:hover {
 #about-heading {
     user-select: none;
     font-size: 1.8vw;
-    text-decoration: underline;
 }
 
 #about-text {
     margin: 0 10% 0 10%;
-    font-weight: bold;
     user-select: none;
     line-height: 150%;
     font-size: 1.3vw;
@@ -169,7 +192,7 @@ li:hover {
 }
 
 .more-text:hover {
-    color: #FAF3E0;
+    font-weight: bold;
 }
 
 #footer {
