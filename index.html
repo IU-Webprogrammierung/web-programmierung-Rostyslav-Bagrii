@@ -198,7 +198,7 @@
 
     <footer id="footer">
         <div id="footer-links">
-            <p class="footer-item">Kontakt</p>
+            <p id="contact-item" class="footer-item">Kontakt</p>
             <a href="html/datenschutz.html" class="footer-item">Datenschutz</a>
             <a href="html/cookies.html" class="footer-item">Cookies</a>
             <a href="html/impressum.html" class="footer-item">Impressum</a>
@@ -212,22 +212,25 @@
     </footer>
 
     <section id="contact">
-        <p id="submit-access">Frage erfolgreich gesendet</p>
         <form action="/submit" method="POST">
             <!-- Beschriftungen klar mit Labels verknüpfen -->
-            <label for="question">Ihre Frage</label>
-            <textarea id="question" name="question" rows="4" placeholder="Geben Sie Ihre Frage ein..." required></textarea>
-        
-            <label for="name">Ihr Name</label>
+            <div id="close-contact"><p id="close">X</p></div>
+            <label class="label" for="question">Ihre Frage</label>
+            <textarea id="question" name="question" rows="8" placeholder="Geben Sie Ihre Frage ein..." required></textarea>
+            
+            <label class="label" for="name">Ihr Name</label>
             <input type="text" id="name" name="name" placeholder="Ihr Name" required>
-        
-            <label for="email">Ihre E-Mail-Adresse</label>
+            
+            <label class="label" for="email">Ihre E-Mail-Adresse</label>
             <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+
              <!-- Rolle für Button -->
-            <button type="submit" role="button">Absenden</button>
+            <button id="submit-btn" type="submit" role="button">Absenden</button>
+            <p id="submit-success"></p>
         </form>
     </section>
     
+    <script src="js/index.js"></script>
 </body>
 
 </html>
