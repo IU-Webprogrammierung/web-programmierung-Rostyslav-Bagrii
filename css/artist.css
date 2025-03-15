@@ -45,6 +45,7 @@ body {
     background-color: #426767;
     float: left;
     font-size: 1.5vw;
+    overflow: auto;
 }
 .picture-two {
     height: 90%;
@@ -70,6 +71,34 @@ img {
     width: 75%;
     float: left;
     margin-left: 2%;
+}
+
+
+
+/* Tablet */
+@media (max-width: 959px) {
+
+    .container-one {
+        height: 35vw;
+        width: 90vw;
+    }
+
+    .container-two {
+        height: 35vw;
+        width: 90vw;
+    }
+
+    #main-container {
+        padding: 100px 0 100px 0;
+    }
+
+    .p1 {
+        font-size: 2.5vw;
+    }
+
+    .p2 {
+        font-size: 2.5vw;
+    }
 }
 
 
