@@ -88,4 +88,20 @@ document.querySelectorAll(".more-text").forEach(button => {
             imgPopup.remove();
         });
     });
+
+
+    // SIDEBAR
+    const sidebar = document.getElementById("sidebar");
+    const menu = document.getElementById("menu-button");
+    menu.addEventListener("click", function() {
+        let currentHeight = window.getComputedStyle(sidebar).height;
+        
+        if (currentHeight === "0px") {
+            sidebar.style.height = "40%";
+        } else {
+            sidebar.style.height = "0";
+        }
+    });
+
+
 });

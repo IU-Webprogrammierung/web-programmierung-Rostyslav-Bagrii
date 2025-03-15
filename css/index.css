@@ -54,7 +54,7 @@ body {
 .sidebar-link {
     text-decoration: none;
     color: black;
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     font-style: italic;
 }
 
@@ -85,19 +85,23 @@ body {
 
 #sidebar {
     position: absolute;
-    background-color: gray;
-    height: 100%;
-    width: 23vw;
+    background-color: blanchedalmond;
+    overflow: hidden;
+    height: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     display: none;
+    transition: 0.3s;
 }
 
 ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    text-align: center;
+    gap: 6vw;
 }
 
 li {
@@ -237,6 +241,7 @@ li:hover {
 #footer-slogan {
     font-size: 130%;
     font-style: italic;
+    text-align: center;
 }
 
 #contact {
@@ -388,16 +393,20 @@ textarea:focus {
 /* Tablet */
 @media (max-width: 959px) {
 
-    body {
-        background-color: pink;
-    }
-
     #navbar {
         height: 12vh;
         font-size: 140%;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    #sidebar {
+        display: flex;
+    }
+
+    .sidebar-link {
+        font-size: 2.5vw;
     }
 
     #brand {
@@ -481,6 +490,10 @@ textarea:focus {
         width: 40%;
     }
 
+    #footer-slogan {
+        font-size: 170%;
+    }
+
     .further-page {
         display: none;
     }
@@ -499,6 +512,19 @@ textarea:focus {
         height: 10vh;
     }
 
+    #sidebar {
+        display: flex;
+    }
+
+    .sidebar-link {
+        font-size: 4.5vw;
+    }
+
+    ul {
+        gap: 10vw;
+    }
+
+
     #contact-section {
         visibility: hidden;
     }
@@ -511,6 +537,10 @@ textarea:focus {
 
     #gallery-container {
         padding: 10vw;
+    }
+
+    #about-heading {
+        font-size: 30px;
     }
 
     #about-section {
@@ -550,5 +580,9 @@ textarea:focus {
 
     #footer-logo {
         width: 40%;
+    }
+
+    #footer-slogan {
+        font-size: 140%;
     }
 }
