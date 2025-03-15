@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+}
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+.description, .image {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.image {
+    background-color: #ddd;
+    padding: 0;
+}
+
+.museum-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Smartphone */
+@media (max-width: 767px) {
+    .row {
+        grid-template-columns: 1fr;
+        margin-bottom: 30px;
+        gap: 10px;
+    }
+}
+
+
+
