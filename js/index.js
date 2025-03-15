@@ -41,3 +41,51 @@ submit.addEventListener('click', (e) => {
     e.preventDefault();
     success.textContent = "Anfrage erfolgreich gesendet";
 });
+
+
+
+
+document.querySelectorAll(".more-text").forEach(button => {
+    button.addEventListener("click", (event) => {
+        const id = event.target.dataset.id;
+        const parent = event.target.closest(".grid-item");
+        const imgName = parent.querySelector(".grid-img").getAttribute("name");
+        const imgSrc = parent.querySelector(".grid-img").src;
+        const altText = parent.querySelector(".grid-img").alt;
+        const text = "Dies ist eine Beschreibung für Bild " + `"${imgName}"`; // Hier kannst du den richtigen Text einfügen
+
+
+        navbar.style.opacity = "50%";
+        middleContainer.style.opacity = "50%";
+        galleryContainer.style.opacity = "50%";
+        footer.style.opacity = "50%";
+
+        // Falls das div schon existiert, löschen
+        let existingPopup = document.querySelector(".img-popup");
+        if (existingPopup) {
+            existingPopup.remove();
+        }
+
+        // Neues div erstellen
+        const imgPopup = document.createElement("div");
+        imgPopup.classList.add("img-popup");
+        imgPopup.innerHTML = `
+            <div class="popup-content">
+                <div class="close-box"><p class="img-content-close">&times;</p></div>
+                <p class="img-name">${imgName}</p>
+                <div class="picture-box">
+                    <img class="picture" src="${imgSrc}" alt="${altText}">
+                </div>
+                <p class="img-description">${text}</p>
+            </div>
+        `;
+        
+        // Popup zum Body hinzufügen
+        document.body.appendChild(imgPopup);
+
+        // Schließen-Funktion
+        imgPopup.querySelector(".img-content-close").addEventListener("click", () => {
+            imgPopup.remove();
+        });
+    });
+});

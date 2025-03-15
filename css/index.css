@@ -110,7 +110,7 @@ li:hover {
 }
 
 #middle-container {
-    height: 70vh;
+    height: 30vw;
     display: flex;
     padding: 2vw;
     gap: 2vw;
@@ -329,6 +329,62 @@ textarea:focus {
     color: #FAF3E0;
 }
 
+.img-popup {
+    height: 35vw;
+    width: 35vw;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FAF3E0;
+}
+
+.popup-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picture-box {
+    height: 40%;
+    width: 40%;
+    margin-bottom: 5%;
+}
+
+.picture {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-name {
+    margin: 0 0 4% 0;
+    font-size: 1.5vw;
+}
+
+.img-content-close {
+    font-size: 3vw;
+    margin: 0;
+    cursor: pointer;
+}
+
+.close-box {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 1% 3% 0 0;
+}
+
+.img-description {
+    font-size: 1vw;
+    margin: 0 3% 0 3%;
+}
+
+
+
+
 /* Tablet */
 @media (max-width: 959px) {
 
@@ -339,10 +395,24 @@ textarea:focus {
     #navbar {
         height: 12vh;
         font-size: 140%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #brand {
+        margin: 0 auto;
+        width: 39%;
     }
 
     #menu-button {
         height: 40%;
+        display: block;
+        margin-right: auto;
+    }
+
+    #menu-icon {
+        display: block;
     }
 
     #middle-container {
@@ -358,6 +428,10 @@ textarea:focus {
     #about-section {
         height: max-content;
         width: 100%;
+    }
+
+    #about-heading {
+        font-size: 38px;
     }
 
     #about-text {
@@ -405,6 +479,10 @@ textarea:focus {
 
     #footer-logo {
         width: 40%;
+    }
+
+    .further-page {
+        display: none;
     }
 
 }
