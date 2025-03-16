@@ -64,7 +64,7 @@ body {
 
 
 #brand {
-    height: 80%;
+    height: 90%;
 }
 
 #brand-logo {
@@ -341,7 +341,7 @@ textarea:focus {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #FAF3E0;
+    background-color: #3c6464;
 }
 
 .popup-content {

@@ -86,6 +86,10 @@ document.querySelectorAll(".more-text").forEach(button => {
         // Schließen-Funktion
         imgPopup.querySelector(".img-content-close").addEventListener("click", () => {
             imgPopup.remove();
+            navbar.style.opacity = "100%";
+            middleContainer.style.opacity = "100%";
+            galleryContainer.style.opacity = "100%";
+            footer.style.opacity = "100%";
         });
     });
 
