@@ -1,6 +1,27 @@
 
 //SLIDER
 
+const sliderContent = document.getElementById('slider-content');
+const images = document.querySelectorAll('.slider-img');
+let currentIndex = 0;
+
+function updateSlider() {
+    const offset = -currentIndex * 100; // Verschiebung nach links in Prozent
+    sliderContent.style.transform = `translateX(${offset}%)`;
+}
+
+document.getElementById('left').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateSlider();
+});
+
+document.getElementById('right').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateSlider();
+});
+
+updateSlider();
+
 
 
 // CONTACT POPUP

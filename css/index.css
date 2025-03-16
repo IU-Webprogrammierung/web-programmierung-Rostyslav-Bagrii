@@ -114,7 +114,7 @@ li:hover {
 }
 
 #middle-container {
-    height: 30vw;
+    height: 35vw;
     display: flex;
     padding: 2vw;
     gap: 2vw;
@@ -128,17 +128,46 @@ li:hover {
 }
 
 #slider-box {
+    position: relative;
     height: 100%;
     width: 60%;
-    background-color: orange;
+    overflow: hidden; /* Verhindert, dass andere Bilder sichtbar sind */
 }
 
 #slider-content {
-    height: 100%;
+    display: flex;
     width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
 }
 
 .slider-img {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+#left {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    height: 3vw;
+    width: 3vw;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#right {
+    position: absolute;
+    top: 50%;
+    left: 97%;
+    transform: translate(-50%, -50%);
+    height: 3vw;
+    width: 3vw;
+    cursor: pointer;
+}
+
+.arrow {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -540,6 +569,16 @@ textarea:focus {
         font-size: 5vw;
     }
 
+    #left {
+        height: 5vw;
+        width: 5vw;
+    }
+    
+    #right {
+        height: 5vw;
+        width: 5vw;
+    }
+
 }
 
 
@@ -668,5 +707,15 @@ textarea:focus {
 
     .img-content-close {
         font-size: 7vw;
+    }
+
+    #left {
+        height: 7vw;
+        width: 7vw;
+    }
+    
+    #right {
+        height: 7vw;
+        width: 7vw;
     }
 }
