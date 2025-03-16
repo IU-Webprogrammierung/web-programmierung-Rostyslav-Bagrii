@@ -1,5 +1,6 @@
 body {
     margin: 0 auto;
+    font-family: 'Prata', serif;
 }
 #main-container {
     position: relative;
@@ -22,7 +23,7 @@ body {
     height: 100%;
     width: 80%;
     background-color: #426767;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     overflow: auto;      
 }
 
@@ -44,7 +45,7 @@ body {
     width: 80%;
     background-color: #426767;
     float: left;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     overflow: auto;
 }
 .picture-two {
