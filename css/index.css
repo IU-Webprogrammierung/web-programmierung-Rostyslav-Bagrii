@@ -498,6 +498,31 @@ textarea:focus {
         display: none;
     }
 
+    #contact {
+        height: 75vw;
+        width: 70vw;
+    }
+
+    .label {
+        font-size: 20px;
+    }
+
+    #question {
+        font-size: 20px;
+    }
+
+    #name {
+        font-size: 20px;
+    }
+
+    #email {
+        font-size: 20px;
+    }
+
+    #close {
+        font-size: 20px;
+    }
+
 }
 
 
@@ -584,5 +609,30 @@ textarea:focus {
 
     #footer-slogan {
         font-size: 140%;
+    }
+
+    #contact {
+        height: 95vw;
+        width: 85vw;
+    }
+
+    .label {
+        font-size: 15px;
+    }
+
+    #question {
+        font-size: 17px;
+    }
+
+    #name {
+        font-size: 17px;
+    }
+
+    #email {
+        font-size: 17px;
+    }
+
+    #close {
+        font-size: 17px;
     }
 }
