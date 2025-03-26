@@ -39,8 +39,21 @@ body {
 
 
 
+/* Tablet */
+@media (max-width: 959px) {
+    body {
+        padding-top: 50px;
+    }
+}
 
+
+
+/* Smartphone */
 @media screen and (max-width: 768px) {
+
+    body {
+        padding: 0;
+    }
 
     .epoch {
         width: 100%;

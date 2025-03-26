@@ -38,6 +38,15 @@ body {
 
 
 
+/* Tablet */
+@media (max-width: 959px) {
+    .container {
+        padding-top: 50px;
+    }
+}
+
+
+
 /* Smartphone */
 @media (max-width: 767px) {
     .row {
@@ -45,6 +54,11 @@ body {
         margin-bottom: 30px;
         gap: 10px;
     }
+
+    .container {
+        padding-top: 25px;
+    }
+
 }
 
 

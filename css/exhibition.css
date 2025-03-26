@@ -45,6 +45,11 @@ body {
 
 /* Tablet */
 @media (max-width: 959px) {
+
+    body {
+        padding-top: 25px;
+    }
+
     .gallery {
         gap: 40px;
     }

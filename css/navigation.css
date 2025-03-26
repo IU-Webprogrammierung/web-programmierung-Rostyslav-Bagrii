@@ -14,3 +14,13 @@
 #back:hover {
     scale: 110%;
 }
+
+
+
+/* Tablet */
+@media (max-width: 959px) {
+    #back {
+        height: 4vw;
+        width: 8vw;
+    }
+}
