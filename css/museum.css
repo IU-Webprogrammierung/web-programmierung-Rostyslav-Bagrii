@@ -59,6 +59,10 @@ body {
         padding-top: 25px;
     }
 
+    .image {
+        order: -1;
+    }
+
 }
 
 
