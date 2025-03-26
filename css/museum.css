@@ -36,22 +36,6 @@ body {
     margin: 0;
 }
 
-#back {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 2vw;
-    width: 4vw;
-    background-image: url(/img/back-arrow.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-}
-
-#back:hover {
-    scale: 110%;
-}
 
 
 /* Smartphone */
