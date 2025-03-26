@@ -94,6 +94,7 @@ body {
     align-items: center;
     display: none;
     transition: 0.3s;
+    z-index: 100;
 }
 
 ul {
