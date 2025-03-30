@@ -58,8 +58,9 @@ close.addEventListener('click', () => {
     footer.style.opacity = "100%";
 });
 
-submit.addEventListener('click', (e) => {
+form.addEventListener('submit', (e) => {
     e.preventDefault();
+    success.style.display = "block";
     success.textContent = "Anfrage erfolgreich gesendet";
 });
 

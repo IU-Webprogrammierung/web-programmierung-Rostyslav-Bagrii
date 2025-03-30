@@ -71,18 +71,6 @@ body {
     height: 100%;
 }
 
-#contact-section {
-    display: none;
-}
-
-#contact-text {
-    cursor: pointer;
-}
-
-#contact-text:hover {
-    color: #FAF3E0;
-}
-
 #sidebar {
     position: absolute;
     background-color: blanchedalmond;
@@ -274,96 +262,6 @@ li:hover {
     text-align: center;
 }
 
-#contact {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 35vw;
-    width: 35vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #3c6464;
-    padding: 1% 0 0 0;
-    display: none;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 2%;
-    height: 100%;   
-}
-
-#question {
-    height: 50%;
-    width: 90%;
-    resize: none;
-    font-size: 1.2vw;
-    margin-bottom: 3%;
-    background-color: #FAF3E0;
-}
-
-#name {
-    height: 15%;
-    width: 60%;
-    margin-bottom: 3%;
-    font-size: 1.2vw;
-    background-color: #FAF3E0;
-}
-
-#email {
-    height: 15%;
-    width: 60%;
-    margin-bottom: 5%;
-    font-size: 1.2vw;
-    background-color: #FAF3E0;
-}
-
-.label {
-    font-size: 1.3vw;
-}
-
-input:focus  {
-    outline: none;
-}
-
-textarea:focus {
-    outline: none;
-}
-
-#submit-btn {
-    height: 15%;
-    width: 20%;
-    background-color: #FAF3E0;
-}
-
-#submit-btn:hover {
-    scale: 110%;
-}
-
-#close-contact {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 1% 5% 0 0;
-}
-
-#close {    
-    height: 100%;
-    cursor: pointer;
-    font-size: 1.5vw;
-    margin: 0;
-}
-
-#close:hover {
-    color: #FAF3E0;
-}
-
 .img-popup {
     height: 35vw;
     width: 35vw;
@@ -417,6 +315,9 @@ textarea:focus {
     margin: 0 3% 0 3%;
 }
 
+#contact-section {
+    display: none;
+}
 
 
 
@@ -458,10 +359,6 @@ textarea:focus {
         flex-direction: column-reverse;
         align-items: center;
         height: 100%;
-    }
-
-    #contact-text {
-        font-size: 130%;
     }
 
     #about-section {
@@ -528,31 +425,6 @@ textarea:focus {
         display: none;
     }
 
-    #contact {
-        height: 75vw;
-        width: 70vw;
-    }
-
-    .label {
-        font-size: 20px;
-    }
-
-    #question {
-        font-size: 20px;
-    }
-
-    #name {
-        font-size: 20px;
-    }
-
-    #email {
-        font-size: 20px;
-    }
-
-    #close {
-        font-size: 20px;
-    }
-
     .img-popup {
         height: 50vh;
         width: 70vw;
@@ -604,11 +476,6 @@ textarea:focus {
 
     ul {
         gap: 10vw;
-    }
-
-
-    #contact-section {
-        visibility: hidden;
     }
 
     #middle-container {
@@ -666,31 +533,6 @@ textarea:focus {
 
     #footer-slogan {
         font-size: 140%;
-    }
-
-    #contact {
-        height: 95vw;
-        width: 85vw;
-    }
-
-    .label {
-        font-size: 15px;
-    }
-
-    #question {
-        font-size: 17px;
-    }
-
-    #name {
-        font-size: 17px;
-    }
-
-    #email {
-        font-size: 17px;
-    }
-
-    #close {
-        font-size: 17px;
     }
 
     .img-popup {
