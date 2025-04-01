@@ -5,7 +5,9 @@ body {
     background-color: #FAF3E0;
     flex-direction: column;
     font-family: 'Prata', serif;
+    user-select: none;
 }
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -25,7 +27,6 @@ body {
     position: relative;
     width: 100%;
     aspect-ratio: 1;
-    border-radius: 10px;
     overflow: hidden;
     transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
 }
@@ -42,6 +43,72 @@ body {
 }
 
 
+#information {
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3c6464;
+    transition: transform 0.7s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    z-index: 100;
+    will-change: transform;
+}
+
+#information.active {
+    transform: translateX(-100vw);
+}
+
+.img-placeholder {
+    aspect-ratio: 1 / 1;
+    width: 25%;
+    opacity: 0;
+    transition: opacity 1.3s ease-in-out;
+    transition-delay: 0.7s;
+}
+
+.img-placeholder.active {
+    opacity: 1;
+}
+
+.img-information {
+    height: 55%;
+    width: 55%;
+    line-height: 250%;
+}
+
+.text {
+    opacity: 0;
+    transition: opacity 1.3s ease-in-out;
+    transition-delay: 1.4s;
+}
+
+.text.active {
+    opacity: 1;
+}
+
+#close {
+    position: absolute;
+    width: 5%;
+    aspect-ratio: 1 / 1;
+    left: 0;
+    top: 0;
+    font-size: 3.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#close:hover {
+    scale: 120%;
+}
+
+
 
 /* Tablet */
 @media (max-width: 959px) {
@@ -53,9 +120,60 @@ body {
     .gallery {
         gap: 40px;
     }
+
+
+
+    #information {
+        top: -100vh;
+        right: 0;
+        flex-direction: column;
+    }
+    
+    #information.active {
+        transform: translateY(100vh);
+    }
+    
+    .img-placeholder {
+        width: 40%;
+    }
+    
+    .img-information {
+        line-height: 220%;
+        font-size: 120%;
+        width: 70%;
+    }
+    
+    #close {
+        width: 7%;
+        font-size: 6.5vw;
+    }
+    
+    #close:hover {
+        scale: 120%;
+    }
+
 }
 
 /* Smartphone */
 @media (max-width: 767px) {
+
+    #information {
+        overflow: scroll;
+    }
+    
+    .img-placeholder {
+        width: 55%;
+    }
+    
+    .img-information {
+        line-height: 200%;
+        font-size: 90%;
+        width: 80%;
+    }
+    
+    #close {
+        width: 8%;
+        font-size: 8.5vw;
+    }
 
 }
