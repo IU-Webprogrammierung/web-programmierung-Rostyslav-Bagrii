@@ -5,8 +5,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FAF3E0;
-    color: white;
     text-align: center;
+    color: white;
 }
 .container {
     max-width: 800px;
@@ -41,6 +41,7 @@ a:hover {
     text-decoration: underline;
 }
 
+
 /* Tablet */
 @media (max-width: 959px) {
     .container {
@@ -53,6 +54,7 @@ a:hover {
     }
 }
 
+
 /* Smartphone */
 @media (max-width: 767px) {
     .container {
@@ -61,6 +63,6 @@ a:hover {
     }
 
     h1 {
-        font-size: 25px;
+        font-size: 28px;
     }
 }
