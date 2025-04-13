@@ -2,5 +2,5 @@
 
 const backBtn = document.getElementById('back');
 backBtn.addEventListener('click', function() {
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
 });
