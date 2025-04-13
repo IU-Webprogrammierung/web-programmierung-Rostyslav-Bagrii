@@ -5,21 +5,24 @@ body {
     background-color: #FAF3E0;
     font-family: 'Prata', serif;
 }
+
 .timeline {
     position: relative;
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
 }
+
 .timeline::after {
     content: '';
     position: absolute;
-    width: 6px;
+    width: 8px;
     background: #e30c0c;
     top: 0;
     bottom: 0;
     left: 50%;
 }
+
 .epoch {
     position: relative;
     width: 50%;
@@ -27,16 +30,34 @@ body {
     box-sizing: border-box;
     background-color: #3c6464;
     margin-bottom: 20px;
+    z-index: 100;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    cursor: pointer;
 }
+
+.epoch:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 25px rgba(0, 255, 255, 0.3);
+}
+
+.epoch:nth-child(odd):hover {
+    background: linear-gradient(-135deg, #3c6464, #4da6a6);
+
+}
+
+.epoch:nth-child(even):hover {
+    background: linear-gradient(135deg, #3c6464, #4da6a6);
+}
+
 .epoch:nth-child(odd) {
     left: 0;
     text-align: right;
 }
 .epoch:nth-child(even) {
-    left: 50%;
+    left: 51%;
     text-align: left;
 }
-
 
 
 /* Tablet */
@@ -45,8 +66,6 @@ body {
         padding-top: 50px;
     }
 }
-
-
 
 /* Smartphone */
 @media screen and (max-width: 768px) {
